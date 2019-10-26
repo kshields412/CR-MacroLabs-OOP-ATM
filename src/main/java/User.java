@@ -6,10 +6,11 @@ public class User {
 
     public User() {
     }
-    public User (String firstName, String lastName, Integer pin) {
+    public User (String firstName, String lastName, Integer pin, Double balance) {
         setFirstName(firstName);
         setLastName(lastName);
         setPin(pin);
+        setBalance(balance);
     }
     public String getFirstName() {
         return firstName;
