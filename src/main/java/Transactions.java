@@ -24,7 +24,9 @@ public class Transactions {
         //grab current balance
         //increase to the new balance
         //set the new balance in the bin
-        //save to transaction history (append to list array)
+              //new balance = old balance + increment;
+              //or //balance += increment;
+        //save to transaction history (append to array list)
     }
 
     public void withdraw(double increment, String acctType){
@@ -37,7 +39,7 @@ public class Transactions {
             //if sufficient
                 //decrease from the old balance
                 //set the new balance in the bin
-                //save to transaction history (append to list array)
+                //save to transaction history (append to array list)
             //if insufficient
                 //"insufficient funds" message
 
@@ -57,7 +59,7 @@ public class Transactions {
                 //set the new origin balance in the bin
                 //add to the destination balance
                 //set the new destination balance in the bin
-                //save both actions to transaction history (append to list array)
+                //save both actions to transaction history (append to array list)
             //if insufficient
                 //"insufficient funds" message
     }
@@ -80,9 +82,10 @@ public class Transactions {
         //grab current balance
         //increase to the new balance
         //set the new balance in the bin
-        //save to transaction history (append to list array)
+        //save to transaction history (append to array list)
     }
 
+/*  -------UNNECESSARY, JUST USE THE GETTER---------------------------
     public void currentBalance(double increment, String acctType){
         //pull the amount being changed
         this.increment = increment;
@@ -91,8 +94,9 @@ public class Transactions {
         //grab current balance
         //increase to the new balance
         //set the new balance in the bin
-        //save to transaction history (append to list array)
+        //save to transaction history (append to array list)
     }
+*/
 
     public void transactionHistory(double increment, String acctType){
         //pull the amount being changed
@@ -102,19 +106,11 @@ public class Transactions {
         //grab current balance
         //increase to the new balance
         //set the new balance in the bin
-        //save to transaction history (append to list array)
+        //save to transaction history (append to array list)
     }
 
     /* --------------------CHALLENGE------------------------
-    public void transferOtherUser(double increment, String acctType){
-        //pull the amount being changed
-        this.increment = increment;
-        //determine which account
-        this.acctType = acctType;
-        //grab current balance
-        //increase to the new balance
-        //set the new balance in the bin
-        //save to transaction history (append to list array)
+    public void transferOtherUser(double increment, String acctType, String acctType2, user2){
    }
     -----------------------CHALLENGE---------------------*/
 
