@@ -1,3 +1,5 @@
+package AccountsAndTransactions;
+
 public class Transactions {
     /*
       needed:
@@ -15,18 +17,30 @@ public class Transactions {
     private double increment;  //the amount to be changed
     private String acctType;   //the type of account being changed
     private String acctType2;  //used when a second account type is required, such as a transfer
+    private Account acctName;
 
-    public void deposit(double increment, String acctType){
-        //pull the amount being changed
-        this.increment = increment;
-        //determine which account
-        this.acctType = acctType;
-        //grab current balance
-        //increase to the new balance
-        //set the new balance in the bin
-              //new balance = old balance + increment;
-              //or //balance += increment;
-        //save to transaction history (append to array list)
+    public Transactions(Account acctName) {
+        this.acctName = acctName;
+    }
+
+    public  void deposit(double increment, String acctType){
+        this.increment = increment;        //pull the amount being changed
+        this.acctType = acctType;        //determine which account
+        //determine appropriate account, then perform balance += increment;
+        if(acctType == "checking"){
+            acctName.setChkAcctBal(acctName.getChkAcctBal() + increment);
+        }
+        else if (acctType == "savings"){
+            acctName.setSavAcctBal(acctName.getSavAcctBal() + increment);
+        }
+        else if (acctType == "investment"){
+            acctName.setInvAcctBal(acctName.getInvAcctBal() + increment);
+        }
+        else {
+            System.out.println("not a valid account type");
+            //then return them to the transaction screen
+        }
+        acctName.transactionHistory.add("Deposited $" + increment + " to " + acctType + "."); //append this transaction to the user's transaction history ArrayList
     }
 
     public void withdraw(double increment, String acctType){

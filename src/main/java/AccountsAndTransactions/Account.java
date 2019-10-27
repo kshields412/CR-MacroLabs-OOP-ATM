@@ -1,3 +1,5 @@
+package AccountsAndTransactions;
+
 import java.util.ArrayList;
 
 public class Account {
@@ -18,7 +20,7 @@ public class Account {
             - alternately, access the spreadsheet every time any transaction is completed, so that if the program crashes before closing all information is still saved
          */
 
-    //establish all the data stored in the Account object:
+    //establish all the data stored in the AccountsAndTransactions.Account object:
     //instances of Accounts should have name [firstLast]
     private String firstName;
     private String lastName;
@@ -29,7 +31,7 @@ public class Account {
     private double chkAcctBal;
     private double savAcctBal;
     private double invAcctBal;
-    private ArrayList<String> transactionHistory = new ArrayList<String>();
+    public ArrayList<String> transactionHistory = new ArrayList<String>();
 
     //actions that can be called to create a new account bin:
     public Account(String firstName, String lastName, int pin){
@@ -39,7 +41,7 @@ public class Account {
     }
 
 
-    //create getters for all the data stored in the Account object:
+    //create getters for all the data stored in the AccountsAndTransactions.Account object:
     public String getFirstName() {
         return firstName;
     }
@@ -77,6 +79,43 @@ public class Account {
     }
 
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+
+    public void setChkAcctNum(int chkAcctNum) {
+        this.chkAcctNum = chkAcctNum;
+    }
+
+    public void setSavAcctNum(int savAcctNum) {
+        this.savAcctNum = savAcctNum;
+    }
+
+    public void setInvAcctNum(int invAcctNum) {
+        this.invAcctNum = invAcctNum;
+    }
+
+    public void setChkAcctBal(double chkAcctBal) {
+        this.chkAcctBal = chkAcctBal;
+    }
+
+    public void setSavAcctBal(double savAcctBal) {
+        this.savAcctBal = savAcctBal;
+    }
+
+    public void setInvAcctBal(double invAcctBal) {
+        this.invAcctBal = invAcctBal;
+    }
+
+    public void setTransactionHistory(ArrayList<String> transactionHistory) {
+        this.transactionHistory = transactionHistory;
+    }
 }
