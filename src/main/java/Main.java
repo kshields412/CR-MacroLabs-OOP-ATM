@@ -53,7 +53,6 @@ public class Main {
 
                 default:
                     Console.println("Error: invalid option");
-
                     break;
             }
         } System.out.print("Thank you for using our services! Have a nice Day!");

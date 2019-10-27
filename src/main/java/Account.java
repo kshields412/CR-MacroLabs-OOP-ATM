@@ -64,7 +64,7 @@ public class Account {
         return invAcctNum;
     }
 
-    public double getChkAcctBal() {
+    public double v() {
         return chkAcctBal;
     }
 
