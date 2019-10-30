@@ -25,6 +25,7 @@ public class Transactions {
         this.acctName = acctName;
     }
 
+
     public void deposit(double increment, String acctType){
         this.increment = increment;        //pull the amount being changed
         this.acctType = acctType;          //determine which account

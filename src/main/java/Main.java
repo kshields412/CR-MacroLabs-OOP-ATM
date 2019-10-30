@@ -37,7 +37,7 @@ public class Main {
                     String usernameValue = Console.getStringInput("Welcome back! \n Please input your username: ");
                     Integer pinNum = Console.getIntegerInput(" Please input your four digit pin number: ");
                     Menu.pinMenu(pinNum);
-
+                    //needs to create an instance of an account with associated Name and pin
 
                     break;
 
@@ -49,7 +49,7 @@ public class Main {
                     System.out.println("Welcome " + firstName + " \n Your new username is :" + firstName + lastName);
                     Integer newPinNum = Console.getIntegerInput(" Please create your four digit pin number: ");
                     Menu.pinMenu(newPinNum);
-                    TransactionMenu.accountsMenu();
+                    //TransactionMenu.accountsMenu(variable);
 
                     break;
                 case 3:

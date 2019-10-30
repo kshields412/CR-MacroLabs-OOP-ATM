@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Account {
     private static double chkAcctBal;
+    private static double savAcctBal;
+    private static double invAcctBal;
 
 
     /*
@@ -30,9 +32,6 @@ public class Account {
     private int chkAcctNum;
     private int savAcctNum;
     private int invAcctNum;
-
-    private double savAcctBal;
-    private double invAcctBal;
     public ArrayList<String> transactionHistory = new ArrayList<String>();
 
     //actions that can be called to create a new account bin:
@@ -72,11 +71,11 @@ public class Account {
         return chkAcctBal;
     }
 
-    public double getSavAcctBal() {
+    public static double getSavAcctBal() {
         return savAcctBal;
     }
 
-    public double getInvAcctBal() {
+    public static double getInvAcctBal() {
         return invAcctBal;
     }
 
