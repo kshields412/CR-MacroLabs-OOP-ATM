@@ -1,9 +1,9 @@
-
+import AccountsAndTransactions.Account;
 
 public class TransactionMenu {
 
 
-    public static void main(String[] args) {
+    public static void accountsMenu() {
 
 
         Integer inputValue = Console.getIntegerInput("Please choose which account you want to access" +
@@ -13,8 +13,8 @@ public class TransactionMenu {
         switch (inputValue) {
             case 1:
 
-                //System.out.println(" Your Checkings balance is $" + Account.getChkAcctBal());
-                //System.out.println ("What would you like to do?")
+                System.out.println(String.format(" Your Checkings balance is $%.2f",Account.getChkAcctBal()));
+                System.out.println ("What would you like to do?");
                 // transactions();
 
                 break;

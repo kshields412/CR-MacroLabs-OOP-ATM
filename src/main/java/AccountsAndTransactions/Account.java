@@ -3,6 +3,7 @@ package AccountsAndTransactions;
 import java.util.ArrayList;
 
 public class Account {
+    private static double chkAcctBal;
 
 
     /*
@@ -29,7 +30,7 @@ public class Account {
     private int chkAcctNum;
     private int savAcctNum;
     private int invAcctNum;
-    private double chkAcctBal;
+
     private double savAcctBal;
     private double invAcctBal;
     public ArrayList<String> transactionHistory = new ArrayList<String>();
@@ -67,7 +68,7 @@ public class Account {
         return invAcctNum;
     }
 
-    public double getChkAcctBal() {
+    public static double getChkAcctBal() {
         return chkAcctBal;
     }
 
@@ -78,7 +79,7 @@ public class Account {
     public double getInvAcctBal() {
         return invAcctBal;
     }
- 
+
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;

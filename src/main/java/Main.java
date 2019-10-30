@@ -49,6 +49,7 @@ public class Main {
                     System.out.println("Welcome " + firstName + " \n Your new username is :" + firstName + lastName);
                     Integer newPinNum = Console.getIntegerInput(" Please create your four digit pin number: ");
                     Menu.pinMenu(newPinNum);
+                    TransactionMenu.accountsMenu();
 
                     break;
                 case 3:
