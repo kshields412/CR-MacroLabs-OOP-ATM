@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Account {
 
+
     /*
         Things we need here:
         1. checking accounts
@@ -77,7 +78,7 @@ public class Account {
     public double getInvAcctBal() {
         return invAcctBal;
     }
-
+ 
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;

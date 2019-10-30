@@ -7,7 +7,7 @@ public class User {
 
     public User() {
     }
-    public User (String firstName, String lastName, Integer pin, Double balance) {
+    public User(String firstName, String lastName, Integer pin, Double balance) {
         setFirstName(firstName);
         setLastName(lastName);
         setPin(pin);
