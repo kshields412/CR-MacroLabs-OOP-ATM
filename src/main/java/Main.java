@@ -9,6 +9,7 @@ public class Main {
         boolean turnOn = true;
         {
 
+
             Console.println("Welcome to the ATM ! \n                                        \n" +
                     "***     ***              ***              \n" +
                     "***     ***              ***              \n" +
@@ -36,6 +37,7 @@ public class Main {
                     Integer pinNum = Console.getIntegerInput(" Please input your four digit pin number: ");
                     Menu.pinMenu(pinNum);
 
+
                     break;
 
 
@@ -46,6 +48,7 @@ public class Main {
                     System.out.println("Welcome " + firstName + " \n Your new username is :" + firstName + lastName);
                     Integer newPinNum = Console.getIntegerInput(" Please create your four digit pin number: ");
                     Menu.pinMenu(newPinNum);
+
                     break;
                 case 3:
                     turnOn = false;

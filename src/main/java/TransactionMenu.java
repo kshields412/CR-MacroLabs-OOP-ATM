@@ -4,38 +4,38 @@ public class TransactionMenu {
     public static void main(String[] args) {
 
 
-            Integer inputValue = Console.getIntegerInput("Please choose which account you want to access" +
-                    " \n 1. Checkings \n 2. Savings \n 3. Investement \n 4. Quit ");
+        Integer inputValue = Console.getIntegerInput("Please choose which account you want to access" +
+                " \n 1. Checkings \n 2. Savings \n 3. Investement \n 4. Quit ");
 
 
-            switch (inputValue) {
-                case 1:
+        switch (inputValue) {
+            case 1:
 
-                    //System.out.println(" Your Checkings balance is $" + Account.getChkAcctBal());
-                    //System.out.println ("What would you like to do?")
-                    // transactions();
+                //System.out.println(" Your Checkings balance is $" + Account.getChkAcctBal());
+                //System.out.println ("What would you like to do?")
+                // transactions();
 
-                    break;
+                break;
 
-                case 2:
-                    //System.out.println(" Your Savings balance is $" + Account.getSavAcctBal());
-                    //System.out.println ("What would you like to do?")
-                    // transactions();
-
-
-                    break;
-
-                case 3:
-                    //System.out.println(" Your Investment balance is $" + Account.getInvAcctBal());
-                    //System.out.println ("What would you like to do?")
-                    // transactions();
+            case 2:
+                //System.out.println(" Your Savings balance is $" + Account.getSavAcctBal());
+                //System.out.println ("What would you like to do?")
+                // transactions();
 
 
-                    break;
+                break;
+
+            case 3:
+                //System.out.println(" Your Investment balance is $" + Account.getInvAcctBal());
+                //System.out.println ("What would you like to do?")
+                // transactions();
 
 
-            }
+                break;
+
+
         }
+    }
 
 
     public static void transactions(Integer userInput) {
@@ -58,5 +58,7 @@ public class TransactionMenu {
             case 4:
 
                 break;
+        }
+
     }
-    }
+}
