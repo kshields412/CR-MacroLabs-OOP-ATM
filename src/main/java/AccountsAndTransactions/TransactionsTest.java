@@ -3,9 +3,9 @@ package AccountsAndTransactions;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 public class TransactionsTest {
+2
 
     @Test
     public void depositTest(){

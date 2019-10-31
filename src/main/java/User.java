@@ -1,9 +1,14 @@
+import AccountsAndTransactions.Account;
+
+import java.util.ArrayList;
+
 public class User {
 
     private String firstName;
     private String lastName;
     private Integer pin;
     private Double balance;
+    private ArrayList<Account> accsStored = new ArrayList<Account>();
 
     public User() {
     }
